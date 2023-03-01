@@ -35,7 +35,7 @@ class RadioTest {
     @Test
     public void nextRadioStationMinConstructorTest() {
         Radio radio = new Radio(15);
-        radio.setCurrentRadioStation(0);
+        radio.setCurrentRadioStation(radio.getMinAmountOfRadioStations());
         radio.nextRadioStation();
         assertEquals(1, radio.getCurrentRadioStation());
 
@@ -44,7 +44,7 @@ class RadioTest {
     @Test
     public void nextRadioStationMaxConstructorTest() {
         Radio radio = new Radio(25);
-        radio.setCurrentRadioStation(24);
+        radio.setCurrentRadioStation(radio.getMaxAmountOfRadioStations());
         radio.nextRadioStation();
         assertEquals(0, radio.getCurrentRadioStation());
     }
@@ -52,7 +52,7 @@ class RadioTest {
     @Test
     public void prevRadioStationMinConstructorTest() {
         Radio radio = new Radio(66);
-        radio.setCurrentRadioStation(0);
+        radio.setCurrentRadioStation(radio.getMinAmountOfRadioStations());
         radio.prevRadioStation();
         assertEquals(65, radio.getCurrentRadioStation());
     }
@@ -424,7 +424,7 @@ class RadioTest {
     @Test
     public void prevRadioStationMaxTest() {
         Radio radio = new Radio();
-        radio.setCurrentRadioStation(9);
+        radio.setCurrentRadioStation(radio.getMaxAmountOfRadioStations());
         radio.prevRadioStation();
         assertEquals(8, radio.getCurrentRadioStation());
     }

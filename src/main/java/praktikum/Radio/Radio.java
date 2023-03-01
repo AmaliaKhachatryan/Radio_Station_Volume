@@ -92,22 +92,3 @@ public class Radio {
         setCurrentRadioStation(prevStation);
     }
 }
-
-//    public void setMinAmountOfRadioStations(int minAmountOfRadioStations) {
-//        this.minAmountOfRadioStations = minAmountOfRadioStations;
-//    }
-//
-//    public void setMaxVolume(int maxVolume) {
-//        this.maxVolume = maxVolume;
-//    }
-//
-//    public void setMinVolume(int minVolume) {
-//        this.minVolume = minVolume;
-//    }
-//
-//    public void setMaxAmountOfRadioStations(int maxAmountOfRadioStations) {
-//        this.maxAmountOfRadioStations=maxAmountOfRadioStations;
-//    }
-//    public void setAmountOfRadioStations(int amountOfRadioStations) {
-//     this. amountOfRadioStations=amountOfRadioStations;
-//    }
